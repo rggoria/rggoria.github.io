@@ -243,26 +243,17 @@ section {
 }
 
 /* Contact Section */
-.contact-bg {
-  background-color: var(--secondColor);
-  height: 100%;
-}
-form input,
-textarea,
-.input-group,
-.input-bg {
-  color: var(--textColor) !important;
-  background-color: var(--primaryColor) !important;
-  border: solid var(--gray) !important;
-  border-radius: 25px;
-}
-.form-control::placeholder {
-  color: rgba(216, 216, 216, 0.4);
+.information {
+  background: var(--gray);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-.toast-bg {
-  background-color: #101820;
-  border-radius: 50px !important;
+.information-text {
+  color: var(--textColor);
 }
 
 .footer-bg {
