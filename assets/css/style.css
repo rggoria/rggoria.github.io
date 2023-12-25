@@ -228,6 +228,16 @@ section {
   transition-delay: 1000ms;
 }
 
+/* Projects Section */
+.web-project {
+  background: var(--gray);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
 /* Services Section */
 .hidden-service {
   opacity: 0;
