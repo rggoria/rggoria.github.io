@@ -1,539 +1,1187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <!-- Bootstrap 5.3 CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ram Goria Bootstrap Portfolio</title>
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
-    <link rel = "stylesheet" type = "text/css" href = "./assets/css/style.css">
-</head>
-<body>
-    <!-- HEADER START -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Timeline-2 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bs-brain@2.0.3/tutorials/timelines/timeline-5/assets/css/timeline-5.css"
+    />
+    <!-- Timeline-3 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bs-brain@2.0.3/tutorials/timelines/timeline-3/assets/css/timeline-3.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon_package/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_package/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_package/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon_package/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon_package/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body id="top">
+    <!-- Header Section Start -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow" id="mainNavbar">
-            <div class="container">
-                <a class="navbar-brand text-white"><img src="./assets/images/logo.png" alt="Logo" height="30"> Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="bi bi-list text-white fs-1"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>                    
-                        <li class="nav-item">
-                            <a class="nav-link btn bg-primary" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-lg fixed-top bg-dark py-3 shadow"
+        data-bs-theme="dark"
+        id="mainNavbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">RG.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor02"
+            aria-controls="navbarColor02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ms-auto">
+              <!-- Nav Items -->
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link btn bg-primary" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <!-- HEADER END -->
+    <!-- Header Section End -->
 
-    <!-- HERO START -->
+    <!-- Hero Section Start -->
     <section id="hero">
-        <div class="container hidden-hero">
-            <h1 class="text-center mt-5 fw-bold">I'm a <span class="typer"></span></h1>
-            <div class="row">
-                <div class="col-md-1 social d-none d-md-flex flex-column justify-content-center">
-                    <a href="https://github.com/rggoria" target="_blank"><i class="bi bi-github fs-5"></i></a>
-                    <a href="https://www.linkedin.com/in/ram-emerson-goria-474265265/" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
-                </div>
-                <div class="col-md-5">
-                    <img src="./assets/images/intro_2.png" alt="Profile" class="image-fluid mt-5 ms-lg-4 mx-auto d-block" height="500">
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <div class="hero-content px-lg-5">
-                        <p>
-                            I aim to utilize my passion for innovation and expertise in web and mobile app development.
-                            I am eager to contribute my knowledge and skills towards the success of the company while
-                            gaining valuable hands-on experience and expanding my understanding of the industry.
-                        </p>
-                        <a href="#contact" class="btn btn-primary me-2">Contact</a>
-                        <a href="./assets/document/GORIA_RESUME.pdf" download class="btn btn-outline-primary px-4"><i class="bi bi-arrow-down-circle-fill me-1"></i>Resume</a>
-                    </div>
-                </div>
+      <div id="particles-js"></div>
+      <div id="overlay">
+        <div class="container">
+          <div class="display-1 text-center fw-bold">
+            I'm a <span class="typer"></span>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-1 social d-none d-md-flex flex-column justify-content-center"
+            >
+              <a href="https://github.com/rggoria" target="_blank"
+                ><i class="bi bi-github fs-5"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ram-emerson-goria-474265265/"
+                target="_blank"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
             </div>
+            <div class="col-md-5" data-aos="fade-up">
+              <img
+                src="./assets/images/profile/intro_2.png"
+                class="img-fluid p-5"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <div class="hero-content px-lg-5">
+                <p>
+                  I aim to utilize my passion for innovation and expertise in
+                  web and mobile app development. I am eager to contribute my
+                  knowledge and skills towards the success of the company while
+                  gaining valuable hands-on experience and expanding my
+                  understanding of the industry.
+                </p>
+                <a href="#contact" class="btn btn-primary me-2">Contact</a>
+                <a
+                  href="./assets/document/GORIA_RESUME_2.pdf"
+                  download
+                  class="btn btn-outline-primary px-4"
+                  ><i class="bi bi-arrow-down-circle-fill me-1"></i>Resume</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- HERO END -->
+    <!-- Hero Section End -->
 
-    <!-- ABOUT ME START -->
-    <section id="about">
-        <div class="container hidden-about">
-            <div class="section-title text-center mb-3">
-                <span class="d-flex justify-content-center fw-bold sub-title">WHO AM I</span>
-                <span class="h3 fw-bold border-bottom main-title">About Me</span>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-5">
-                    <img src="./assets/images/profile.jpg" alt="about me" class="image-fluid rounded mx-auto d-block" height="250">
-                </div>
-                <div class="col-md-12 col-lg-7">
-                    <p>
-                        Hello I am Ram Emerson S. Goria, As an inspiring web and mobile app developer, I love creating applications that
-                        are easy for people to use. I'm a great team player and enjoy working with others
-                        to create something awesome. I'm always looking for exciting projects to work on
-                        that can make a positive impact. My portfolio is simple and general to showcase
-                        my skills in different areas. I'm excited about the future of technology and how
-                        I can contribute to making it better.
-                    </p>
-                    <div class="row mt-5 text-center exp d-flex justify-content-center">
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex justify-content-center">
-                                <h4 class="fw-bold exp-number" data-val="7">0</h4>
-                                <h5 class="mt-4 ps-1">+</h5>
-                            </div>
-                            <p>experience</p>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex justify-content-center">
-                                <h4 class="fw-bold exp-number" data-val="7">0</h4>
-                                <h5 class="mt-4 ps-1">+</h5>
-                            </div>
-                            <p>project</p>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex justify-content-center">
-                                <h4 class="fw-bold exp-number" data-val="2">0</h4>
-                                <h5 class="mt-4 ps-1">+</h5>
-                            </div>
-                            <p>certificate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- About Section Start -->
+    <section id="about" class="bg-dark">
+      <div class="container">
+        <div class="section-title text-center mb-3">
+          <span class="d-flex justify-content-center fw-bold sub-title"
+            >WHO AM I</span
+          >
+          <span class="h3 fw-bold border-bottom main-title">About Me</span>
         </div>
-    </section>
-    <!-- ABOUT ME END -->
 
-    <!-- SKILLS START -->
+        <div class="pb-3 bg-gray">
+          <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="true"
+              >
+                Profile
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-education-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-education"
+                type="button"
+                role="tab"
+                aria-controls="pills-education"
+                aria-selected="false"
+              >
+                Education
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-experience-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-experience"
+                type="button"
+                role="tab"
+                aria-controls="pills-experience"
+                aria-selected="false"
+              >
+                Experience
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="row g-0 p-4 align-items-center">
+                <div class="col-md-6 p-md-4">
+                  <img
+                    src="./assets/images/profile/profile.jpg"
+                    alt=""
+                    class="image-fluid rounded mx-auto d-block"
+                    height="250"
+                  />
+                </div>
+                <div class="col-md-6 p-4">
+                  <p>
+                    Hello I am Ram Emerson S. Goria, As an inspiring web and
+                    mobile app developer, I love creating applications that are
+                    easy for people to use. I'm a great team player and enjoy
+                    working with others to create something awesome. I'm always
+                    looking for exciting projects to work on that can make a
+                    positive impact. My portfolio is simple and general to
+                    showcase my skills in different areas. I'm excited about the
+                    future of technology and how I can contribute to making it
+                    better.
+                  </p>
+                </div>
+              </div>
+              <div class="row p-3">
+                <div class="col-lg-6 my-3 details">
+                  <div class="border-custom p-4 d-flex">
+                    <div class="icon"><i class="bi bi-gender-male"></i></div>
+                    <div class="ms-3">
+                      <h5>Gender Pronouns</h5>
+                      <p class="mb-0">He/Him</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 my-3 details">
+                  <div class="border-custom p-4 d-flex">
+                    <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="ms-3">
+                      <h5>Location</h5>
+                      <p class="mb-0">Cainta, Rizal, Philippines</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-education"
+              role="tabpanel"
+              aria-labelledby="pills-education-tab"
+            >
+              <!-- Timeline 3 - Bootstrap Brain Component -->
+              <section class="bsb-timeline-3 py-3 py-md-5 py-xl-8">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-md-12 col-xl-10 col-xxl-9">
+                      <ul class="timeline">
+                        <li class="timeline-item left">
+                          <div class="timeline-body">
+                            <div class="timeline-content timeline-indicator">
+                              <div class="border-custom p-4 d-flex">
+                                <img
+                                  src="./assets/images/education/feu_logo.jpeg"
+                                  alt=""
+                                  class="work"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold">Tertiary Education</h5>
+                                  <p class="mb-0">
+                                    FEU Institute of Technology
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="timeline-item right">
+                          <div class="timeline-body">
+                            <div class="timeline-content timeline-indicator">
+                              <div class="border-custom p-4 d-flex">
+                                <img
+                                  src="./assets/images/education/ama_logo.webp"
+                                  alt=""
+                                  class="work"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold">Secondary Education</h5>
+                                  <p class="mb-0">AMA East Rizal Senior High</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="timeline-item left">
+                          <div class="timeline-body">
+                            <div class="timeline-content timeline-indicator">
+                              <div class="border-custom p-4 d-flex">
+                                <img
+                                  src="./assets/images/education/nazareth_logo.jpeg"
+                                  alt=""
+                                  class="work"
+                                />
+                                <div class="ms-3">
+                                  <h5 class="fw-bold">Primary Education</h5>
+                                  <p class="mb-0">
+                                    Nazareth Christian School of Antipolo
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-experience"
+              role="tabpanel"
+              aria-labelledby="pills-experience-tab"
+            >
+              <!-- Timeline 5 - Bootstrap Brain Component -->
+              <section class="bsb-timeline-5 py-5 py-xl-8">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-md-8 col-xl-6">
+                      <ul class="timeline">
+                        <li class="timeline-item">
+                          <span class="timeline-icon">
+                            <i class="bi-info-lg text-primary"></i>
+                          </span>
+                          <div class="timeline-body">
+                            <div class="timeline-content">
+                              <div class="border-custom p-4 d-flex">
+                                <img
+                                  src="./assets/images/work/hsi_logo.jpeg"
+                                  alt=""
+                                  class="work"
+                                />
+                                <div class="ms-3">
+                                  <p class="text-secondary">
+                                    August 2023 - November 2023
+                                  </p>
+                                  <h5 class="fw-bold">Highly Succeed Inc.</h5>
+                                  <p class="mb-0">
+                                    Quality Assurance Intern | Technical
+                                    Operations Intern | Project Manager Support
+                                    Intern
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="timeline-item">
+                          <span class="timeline-icon">
+                            <i class="bi-info-lg text-primary"></i>
+                          </span>
+                          <div class="timeline-body">
+                            <div class="timeline-content">
+                              <div class="border-custom p-4 d-flex">
+                                <img
+                                  src="./assets/images/work/feu_logo.jpeg"
+                                  alt=""
+                                  class="work"
+                                />
+                                <div class="ms-3">
+                                  <p class="text-secondary">
+                                    April 2023 - August 2023
+                                  </p>
+                                  <h5 class="fw-bold">
+                                    FEU Institute of Technology
+                                  </h5>
+                                  <p class="mb-0">Junior Systems Developer</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Section: Timeline -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
     <section id="skills">
-        <div class="container">
-            <div class="section-title text-center mb-3">
-                <span class="d-flex justify-content-center fw-bold sub-title">PROFICIENT AREAS</span>
-                <span class="h3 fw-bold border-bottom main-title">My Skills</span>
-            </div>
-            <div class="row gap-3 justify-content-center">
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/photoshop.png" class="card-img-top" alt="Photoshop">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/word.png" class="card-img-top" alt="Word">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">Microsoft Word</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/powerpoint.png" class="card-img-top" alt="PowerPoint">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">Microsoft PowerPoint</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/html-5.png" class="card-img-top" alt="HTML">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">HTML 5</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/css-3.png" class="card-img-top" alt="CSS">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">CSS 3</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/javascript.png" class="card-img-top" alt="JavaScript">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">JavaScript</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/php.png" class="card-img-top" alt="PHP">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">PHP</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/bootstrap.png" class="card-img-top" alt="Bootstrap">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">Bootstrap 5</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/codeigniter.png" class="card-img-top" alt="CodeIgniter">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">CodeIgniter 3</p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-2 card text-center p-3 skill hidden-skill" style="width: 10rem;">
-                    <img src="./assets/icons/android-studio.png" class="card-img-top" alt="Android">
-                    <div class="card-body">
-                        <p class="card-text fw-bold skill-text">Android Studio (Kotlin)</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title text-center mb-3">
+          <span class="d-flex justify-content-center fw-bold sub-title"
+            >PROFICIENT AREAS</span
+          >
+          <span class="h3 fw-bold border-bottom main-title">My Skills</span>
         </div>
+        <div class="row g-0 gap-3 justify-content-center">
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/photoshop.svg"
+              class="card-img-top"
+              alt="Photoshop"
+            />
+            <h4 class="mt-3 fw-bold">Adobe Photoshop</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/word.svg"
+              class="card-img-top"
+              alt="Word"
+            />
+            <h4 class="mt-3 fw-bold">Microsoft Word</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/powerpoint.svg"
+              class="card-img-top"
+              alt="Powerpoint"
+            />
+            <h4 class="mt-3 fw-bold">Microsoft Powerpoint</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/html5.svg"
+              class="card-img-top"
+              alt="HTML5"
+            />
+            <h4 class="mt-3 fw-bold">HTML 5</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/css.svg"
+              class="card-img-top"
+              alt="CSS3"
+            />
+            <h4 class="mt-3 fw-bold">CSS 3</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/javascript.svg"
+              class="card-img-top"
+              alt="Javascript"
+            />
+            <h4 class="mt-3 fw-bold">JavaScript</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/php.svg"
+              class="card-img-top"
+              alt="PHP"
+            />
+            <h4 class="mt-3 fw-bold">PHP</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/bootstrap.svg"
+              class="card-img-top"
+              alt="Bootstrap"
+            />
+            <h4 class="mt-3 fw-bold">Bootstrap</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/codeigniter.svg"
+              class="card-img-top"
+              alt="CodeIgniter"
+            />
+            <h4 class="mt-3 fw-bold">CodeIgniter 3</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/android-studio.svg"
+              class="card-img-top"
+              alt="Android"
+            />
+            <h4 class="mt-3 fw-bold">Android Studio</h4>
+          </div>
+          <div
+            class="col-3 border-custom p-3 text-center"
+            style="width: 12rem"
+            data-aos="flip-left"
+          >
+            <img
+              src="./assets/images/icons/kotlin.svg"
+              class="card-img-top"
+              alt="Kotlin"
+            />
+            <h4 class="mt-3 fw-bold">Kotlin</h4>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- SKILLS END -->
+    <!-- Skills Section End -->
 
-    <!-- PROJECTS START -->
+    <!-- Services Section Start -->
+    <section id="services" class="bg-dark">
+      <div class="container">
+        <div class="section-title text-center mb-3">
+          <span class="d-flex justify-content-center fw-bold sub-title"
+            >WHAT I DO</span
+          >
+          <span class="h3 fw-bold border-bottom main-title">My Services</span>
+        </div>
+
+        <div class="row gap-3 justify-content-center">
+          <div class="col-md-4 p-3 border-custom" style="width: 18rem">
+            <div class="d-flex justify-content-center">
+              <lottie-player
+                src="https://assets3.lottiefiles.com/packages/lf20_ctaacxzb.json"
+                background="transparent"
+                speed="1"
+                style="height: 150px; width: 150px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h4 class="fw-bold">Web Application Developer</h4>
+            <p>
+              I have a passion to create web applications that can help users
+              interact easily to the website.
+            </p>
+          </div>
+          <div class="col-md-4 p-3 border-custom" style="width: 18rem">
+            <div class="d-flex justify-content-center">
+              <lottie-player
+                src="https://assets6.lottiefiles.com/packages/lf20_Zo9feTljq8.json"
+                background="transparent"
+                speed="1"
+                style="height: 150px; width: 150px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h4 class="fw-bold">Mobile Application Developer</h4>
+            <p>
+              I have a passion to create mobile applications that can help users
+              interact easily to the application.
+            </p>
+          </div>
+          <div class="col-md-4 p-3 border-custom" style="width: 18rem">
+            <div class="d-flex justify-content-center">
+              <lottie-player
+                src="https://assets5.lottiefiles.com/packages/lf20_rkyfvrzn.json"
+                background="transparent"
+                speed="1"
+                style="height: 150px; width: 150px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h4 class="fw-bold">Quality Assurance Tester</h4>
+            <p>
+              I have the responsibility of identifying and addressing bugs and
+              errors before the project is deployed.
+            </p>
+          </div>
+          <div class="col-md-4 p-3 border-custom" style="width: 18rem">
+            <div class="card-img-top d-flex justify-content-center">
+              <lottie-player
+                src="https://lottie.host/7426641a-519b-4477-ad06-429e85c6a9dc/yKN5sMEiuD.json"
+                background="transparent"
+                speed="1"
+                style="height: 150px; width: 150px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h3 class="card-title fw-bold">Quality Assurance Tester</h3>
+            <p class="card-text">
+              I have the responsibility of identifying and addressing bugs and
+              errors before the project is deployed.
+            </p>
+          </div>
+          <div class="col-md-4 p-3 border-custom" style="width: 18rem">
+            <div class="card-img-top d-flex justify-content-center">
+              <lottie-player
+                src="https://lottie.host/14155774-7709-462e-9971-e6eb79c53141/2bztaHRPto.json"
+                background="transparent"
+                speed="1"
+                style="height: 150px; width: 150px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <h4 class="fw-bold">Project Manager Support</h4>
+            <p>
+              I facilitate communication with developers to track progress and
+              receive updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Project Section Start -->
     <section id="projects">
-        <div class="container">
-            <div class="section-title text-center mb-3">
-                <span class="d-flex justify-content-center fw-bold sub-title">RECENT WORKS BUILT SO FAR</span>
-                <span class="h3 fw-bold border-bottom main-title">My Projects</span>
-            </div>
-            <h3 class="fw-bold">Web Application Projects</h3>
-            <div class="row">
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/alumni-id-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">FEU Tech Alumni ID System</h3>
-                            <p class="card-text">
-                                Adhoc System: Manages Alumni ID records via RFID-enabled smart cards
-                            </p>
-                            <button class="btn btn-danger">This project is private</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/ves-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">FEU Alabang Visitor Entry System</h3>
-                            <p class="card-text">
-                                Adhoc System: Tracks visitor entries and exits with RFID smart cards.
-                            </p>
-                            <button class="btn btn-danger">This project is private</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/coincise-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">Coincise</h3>
-                            <p class="card-text">
-                                Investment Support System with Data Visualization and Risk Identification for Ethereum Mainnet Tokens
-                            </p>
-                            <a href="http://coincise.info/" target="_blank" class="btn btn-primary">Go to site</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/thebois-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">The Bois</h3>
-                            <p class="card-text">
-                                Gundam E-commerce Web-based System
-                            </p>
-                            <a href="https://thebois-gundam.000webhostapp.com" target="_blank" class="btn btn-primary">Go to site</a>
-                            <a href="https://github.com/rggoria/ci-thebois" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/goshopping-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">GoShopping</h3>
-                            <p class="card-text">
-                                E-grocer Web-based System
-                            </p>
-                            <a href="https://github.com/rggoria/ci-goshopping" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/web/betaace-web.png" class="d-block w-100">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">Beta Ace</h3>
-                            <p class="card-text">
-                                Forum Web-based System
-                            </p>
-                            <a href="https://github.com/rggoria/ci-betaace" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 class="fw-bold">Mobile Application Projects</h3>
-            <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/mobile/coincise-mobile.png" height="300px">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">Coincise (Android)</h3>
-                            <p class="card-text">
-                                Investment Support System with Data Visualization and Risk Identification for Ethereum Mainnet Tokens
-                            </p>
-                            <a href="https://github.com/rggoria/as-coincise" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/mobile/techmobile-mobile.png" height="300px">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">TechMobile Software (IOS)</h3>
-                            <p class="card-text">
-                                Simple Pokemon Trivia Guide
-                            </p>
-                            <a href="https://github.com/rggoria/swift-techmobilesoftware" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-3">
-                    <div class="card text-center web-project h-100">
-                        <div class="card-img-top d-flex justify-content-center">
-                            <img src="./assets/images/projects/mobile/technobrake-mobile.png" height="300px">
-                        </div>
-                        <div class="card-body skill-text">
-                            <h3 class="card-title fw-bold">TechnoBreak (Android)</h3>
-                            <p class="card-text">
-                                Notes App with Google Firebase
-                            </p>
-                            <a href="https://github.com/rggoria/as-technobreak" target="_blank" class="btn btn-success">View source code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title text-center mb-3">
+          <span class="d-flex justify-content-center fw-bold sub-title"
+            >RECENT WORKS BUILT SO FAR</span
+          >
+          <span class="h3 fw-bold border-bottom main-title">My Projects</span>
         </div>
+
+        <div class="exp">
+          <ul
+            class="nav nav-pills nav-justified mb-3"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-website-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-website"
+                type="button"
+                role="tab"
+                aria-controls="pills-website"
+                aria-selected="true"
+              >
+                Website Application
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-mobile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-mobile"
+                type="button"
+                role="tab"
+                aria-controls="pills-mobile"
+                aria-selected="false"
+              >
+                Mobile Application
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-website"
+              role="tabpanel"
+              aria-labelledby="pills-website-tab"
+            >
+              <!-- Web App Swiper -->
+              <div class="swiper mySwiper pb-5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/alumni-id-web.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>FEU Tech Alumni ID System</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                            <div class="badge bg-success">RFID</div>
+                          </li>
+                          <li>
+                            Adhoc System: Manages Alumni ID records via
+                            RFID-enabled smart cards
+                          </li>
+                        </ul>
+                        <button
+                          type="button"
+                          class="align-self-end btn btn-lg btn-block btn-outline-danger"
+                          style="margin-top: auto"
+                        >
+                          This project is private
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/ves-web.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>FEU Alabang Visitor Entry System</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                            <div class="badge bg-success">RFID</div>
+                          </li>
+                          <li>
+                            Adhoc System: Tracks visitor entries and exits with
+                            RFID smart cards.
+                          </li>
+                        </ul>
+                        <button
+                          type="button"
+                          class="align-self-end btn btn-lg btn-block btn-outline-danger"
+                          style="margin-top: auto"
+                        >
+                          This project is private
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/coincise-web.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>Coincise</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                          </li>
+                          <li>
+                            Investment Support System with Data Visualization
+                            and Risk Identification for Ethereum Mainnet Tokens
+                          </li>
+                        </ul>
+                        <a
+                          href="http://coincise.info/"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-primary"
+                          style="margin-top: auto"
+                          >Go to site</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/thebois-web.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>The Bois</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                          </li>
+                          <li>Gundam E-commerce Web-based System</li>
+                        </ul>
+                        <a
+                          href="https://thebois-gundam.000webhostapp.com"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-primary"
+                          style="margin-top: auto"
+                          >Go to site</a
+                        >
+                        <a
+                          href="https://github.com/rggoria/ci-thebois"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/goshopping-web.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>GoShopping</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                          </li>
+                          <li>E-grocer Web-based System</li>
+                        </ul>
+                        <a
+                          href="https://github.com/rggoria/ci-goshopping"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 32rem"
+                    >
+                      <img
+                        src="./assets/images/projects/web/betaace-web.png"
+                        class="card-img-top"
+                        alt=""
+                        height="250px"
+                        width="100%"
+                      />
+                      <div class="p-4">
+                        <h5>Beta Ace</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">Codeigniter 3</div>
+                            <div class="badge bg-secondary">Bootstrap 5</div>
+                            <div class="badge bg-info">MySQL</div>
+                          </li>
+                          <li>Forum Web-based System</li>
+                        </ul>
+                        <a
+                          href="https://github.com/rggoria/ci-betaace"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-mobile"
+              role="tabpanel"
+              aria-labelledby="pills-mobile-tab"
+            >
+              <!-- Web App Swiper -->
+              <div class="swiper mySwiper pb-5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 33rem"
+                    >
+                      <img
+                        src="./assets/images/projects/mobile/coincise-mobile.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                      />
+                      <div class="p-4">
+                        <h5>Coincise</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">
+                              Android Application
+                            </div>
+                            <div class="badge bg-secondary">Kotlin</div>
+                            <div class="badge bg-info">Codeigniter 3</div>
+                            <div class="badge bg-success">MySQL</div>
+                          </li>
+                          <li>
+                            Investment Support System with Data Visualization
+                            and Risk Identification for Ethereum Mainnet Tokens
+                          </li>
+                        </ul>
+                        <a
+                          href="https://thebois-gundam.000webhostapp.com"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-primary"
+                          style="margin-top: auto"
+                          >Go to site</a
+                        >
+                        <a
+                          href="https://github.com/rggoria/as-coincise"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 33rem"
+                    >
+                      <img
+                        src="./assets/images/projects/mobile/techmobile-mobile.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                      />
+                      <div class="p-4">
+                        <h5>TechMobile Software</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">IOS Application</div>
+                            <div class="badge bg-secondary">Swift</div>
+                          </li>
+                          <li>Simple Pokemon Trivia Guide</li>
+                        </ul>
+                        <a
+                          href="https://github.com/rggoria/swift-techmobilesoftware"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-gray border-custom d-flex flex-column text-center"
+                      style="height: 33rem"
+                    >
+                      <img
+                        src="./assets/images/projects/mobile/technobrake-mobile.png"
+                        class="mx-auto d-block rounded"
+                        alt=""
+                        height="250px"
+                      />
+                      <div class="p-4">
+                        <h5>TechnoBreak</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>
+                            <div class="badge bg-primary">
+                              Android Application
+                            </div>
+                            <div class="badge bg-secondary">Kotlin</div>
+                            <div class="badge bg-info">Firebase</div>
+                          </li>
+                          <li>Notes App with Google Firebase</li>
+                        </ul>
+                        <a
+                          href="https://github.com/rggoria/as-technobreak"
+                          target="_blank"
+                          class="align-self-end btn btn-lg btn-outline-success"
+                          style="margin-top: auto"
+                          >View source code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- PROJECTS END -->
+    <!-- Project Section End -->
 
-    <!-- SERVICES START -->
-    <section id="services">
-        <div class="container">
-            <div class="section-title text-center mb-3">
-                <span class="d-flex justify-content-center fw-bold sub-title">WHAT I DO</span>
-                <span class="h3 fw-bold border-bottom main-title">My Services</span>
-            </div>
-            <div class="row gap-3 justify-content-center hidden-service">
-                <div class="col-4 col-lg-3 card text-center p-3 bg-transparent" style="width: 18rem;">
-                    <div class="card-img-top d-flex justify-content-center">
-                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ctaacxzb.json"  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                    </div>
-                    <div class="card-body skill-text">
-                        <h3 class="card-title fw-bold">Web Application Developer</h3>
-                        <p class="card-text">
-                            I have a passion to create web applications that can help users interact easily to the website.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-3 card text-center p-3 bg-transparent" style="width: 18rem;">
-                    <div class="card-img-top d-flex justify-content-center">
-                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_Zo9feTljq8.json"  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                    </div>
-                    <div class="card-body skill-text">
-                        <h3 class="card-title fw-bold">Mobile Application Developer</h3>
-                        <p class="card-text">
-                            I have a passion to create mobile applications that can help users interact easily to the application.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-3 card text-center p-3 bg-transparent" style="width: 18rem;">
-                    <div class="card-img-top d-flex justify-content-center">
-                        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rkyfvrzn.json"  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                    </div>
-                    <div class="card-body skill-text">
-                        <h3 class="card-title fw-bold">Web and Mobile Designer</h3>
-                        <p class="card-text">
-                            To design website and mobile to make it more interactive and easy to use and understand to users.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-3 card text-center p-3 bg-transparent" style="width: 18rem;">
-                    <div class="card-img-top d-flex justify-content-center">                        
-                        <lottie-player src="https://lottie.host/7426641a-519b-4477-ad06-429e85c6a9dc/yKN5sMEiuD.json"  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                    </div>
-                    <div class="card-body skill-text">
-                        <h3 class="card-title fw-bold">Quality Assurance Tester</h3>
-                        <p class="card-text">
-                            I have the responsibility of identifying and addressing bugs and errors before the project is deployed.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-3 card text-center p-3 bg-transparent" style="width: 18rem;">
-                    <div class="card-img-top d-flex justify-content-center">                        
-                        <lottie-player src="https://lottie.host/14155774-7709-462e-9971-e6eb79c53141/2bztaHRPto.json"  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                    </div>
-                    <div class="card-body skill-text">
-                        <h3 class="card-title fw-bold">Project Manager Support</h3>
-                        <p class="card-text">
-                            I facilitate communication with developers to track progress and receive updates.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!-- Contact Section Start -->
+    <section id="contact" class="bg-dark">
+      <div class="container">
+        <div class="section-title text-center mb-3">
+          <span class="d-flex justify-content-center fw-bold sub-title"
+            >GET IN TOUCH</span
+          >
+          <span class="h3 fw-bold border-bottom main-title">My Contact</span>
         </div>
+        <div class="text-center">
+          <i class="bi bi-envelope-paper" style="font-size: 100px"></i>
+          <h4>Have Inquiries?</h4>
+          <p>Feel free to connect with me through my contact details.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 details">
+            <a
+              href="tel:+639774027088"
+              class="text-white text-decoration-none"
+              target="_blank"
+            >
+              <div class="border-custom p-4 d-flex">
+                <div class="icon"><i class="bi bi-telephone-fill"></i></div>
+                <div class="ms-3">
+                  <h5>Phone</h5>
+                  <p class="mb-0">(+63) 977 402 7088</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 details">
+            <a
+              href="mailto:goria.reg@gmail.com"
+              class="text-white text-decoration-none"
+              target="_blank"
+            >
+              <div class="border-custom p-4 d-flex">
+                <div class="icon"><i class="bi bi-envelope-fill"></i></div>
+                <div class="ms-3">
+                  <h5>Email</h5>
+                  <p class="mb-0">goria.reg@gmail.com</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 details">
+            <div class="border-custom p-4 d-flex">
+              <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="ms-3">
+                <h5>Location</h5>
+                <p class="mb-0">Cainta, Rizal, Philippines</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 details">
+            <a
+              href="https://github.com/rggoria"
+              class="text-white text-decoration-none"
+              target="_blank"
+            >
+              <div class="border-custom p-4 d-flex">
+                <div class="icon"><i class="bi bi-github"></i></div>
+                <div class="ms-3">
+                  <h5>Github</h5>
+                  <p class="mb-0">rggoria</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 details">
+            <a
+              href="https://www.linkedin.com/in/ram-emerson-goria-474265265/"
+              class="text-white text-decoration-none"
+              target="_blank"
+            >
+              <div class="border-custom p-4 d-flex">
+                <div class="icon"><i class="bi bi-linkedin"></i></div>
+                <div class="ms-3">
+                  <h5>LinkedIn</h5>
+                  <p class="mb-0">Ram Emerson Goria</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- SERVICES END -->
+    <!-- Contact Section End -->
 
-    <!-- CONTACT START -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title text-center mb-3">
-                <span class="d-flex justify-content-center fw-bold sub-title">GET IN TOUCH</span>
-                <span class="h3 fw-bold border-bottom main-title">My Contact</span>
-            </div>
-            <div class="text-center">
-                <i class="bi bi-envelope-paper" style="font-size: 100px;"></i>
-                <h4>Have Inquiries?</h4>
-                <p>Feel free to connect with me through my contact details.</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 p-3">
-                    <a href="tel:+639774027088" class="text-white text-decoration-none" target="_blank">               
-                        <div class="card web-project">
-                            <div class="card-body d-flex align-items-center skill-text">
-                                <div class="me-3">
-                                    <i class="bi bi-telephone-fill h2"></i>
-                                </div>
-                                <div>
-                                    <p class="card-title">(+63) 977 402 7088</p>
-                                    <p class="card-text">Feel free to give me a call!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 p-3">
-                    <a href="mailto:goria.reg@gmail.com" class="text-white text-decoration-none" target="_blank">               
-                        <div class="card web-project">
-                            <div class="card-body d-flex align-items-center skill-text">
-                                <div class="me-3">
-                                    <i class="bi bi-envelope-fill h2"></i>
-                                </div>
-                                <div>
-                                    <p class="card-title">goria.reg@gmail.com</p>
-                            <p class="card-text">Feel free to email me!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 p-3">
-                    <div class="card web-project">
-                        <div class="card-body d-flex align-items-center skill-text">
-                            <div class="me-3">
-                                <i class="bi bi-geo-alt-fill h2"></i>
-                            </div>
-                            <div>
-                                <p class="card-title">Cainta/Philippines</p>
-                                <p class="card-text">Proud Filipino Developer!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 p-3">
-                    <a href="https://github.com/rggoria" class="text-decoration-none" target="_blank">               
-                        <div class="card web-project">
-                            <div class="card-body d-flex align-items-center skill-text">
-                                <div class="me-3">
-                                    <i class="bi bi-github h2"></i>
-                                </div>
-                                <div>
-                                    <p class="card-title">rggoria</p>
-                                    <p class="card-text">Feel free to view my Github!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 p-3">
-                    <a href="https://www.linkedin.com/in/ram-emerson-goria-474265265/" class="text-decoration-none" target="_blank">
-                        <div class="card web-project">
-                            <div class="card-body d-flex align-items-center skill-text">
-                                <div class="me-3">
-                                    <i class="bi bi-linkedin h2"></i>
-                                </div>
-                                <div>
-                                    <p class="card-title">Ram Emerson Goria</p>
-                                    <p class="card-text">Feel free to view my LinkedIn!</p>
-                                </div>
-                            </div>
-                        </div>
-                      </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT END -->
-
-    <audio autoplay loop>
-        <source src="./assets/audio/ice.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- FOOTER START -->
-    <footer class="mt-5 text-center">
-        <div class="container footer-bg">
-            <div class="footer-copyright mt-3">
-                <p>Copyright 2023 RG | Powered by Ram Emerson S. Goria</p>
-            </div>
-        </div>
-        <div id="particles-js" style="position: relative; height: 50px" class="particles-bg"></div>
+    <!-- Footer Section Start -->
+    <footer class="my-3 text-center">
+      <div class="container">
+        <p>Copyright 2024 RG | Designed by Ram Emerson S. Goria</p>
+      </div>
     </footer>
-    <!-- FOOTER END -->
+    <!-- Footer Section End -->
 
-    <!-- Bootstrap 5.3 JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Scroll to top -->
+    <a href="#top" class="icon scroll-to-top"
+      ><i class="bi bi-chevron-double-up"></i
+    ></a>
 
-    <!-- Typed.js CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-    <!-- LottieFiles CDN -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!-- Custom Javascript -->
-    <script src="./assets/js/main.js"></script>
-
-    <!-- Particles.js link -->
+    <!-- AOS JS CSN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles JS link -->
     <script src="./assets/js/particles.js"></script>
+    <!-- LottieFiles JS CDN -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Typed JS CDN -->
+    <script src="./assets/js/typed.umd.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/app.js"></script>
-</body>
+  </body>
 </html>
