@@ -136,7 +136,7 @@ var swiper = new Swiper(".mySwiper", {
   speed: 1000,
   rewind: true,
   autoplay: {
-    delay: 2500,
+    delay: 20000000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -151,7 +151,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
   },
 });
